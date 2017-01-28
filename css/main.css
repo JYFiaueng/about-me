@@ -1,0 +1,47 @@
+body{
+	font-family: 'simsun', sans-serif;
+}
+
+nav{
+	font-size: 18px;
+}
+
+.headPicture{
+	height: 180px;
+	opacity: 0;
+	transition: opacity 0.6s;
+}
+.headPicture-active{
+	opacity: 1;
+}
+
+.info{
+	font-weight: bold;
+	font-size: 22px;
+	color: #fff;
+}
+
+.whiteFont{
+	color: #fff;
+	font-size: 22px;
+	opacity: 0;
+	transition: opacity 0.6s;
+}
+.whiteFont-active{
+	opacity: 1;
+}
+
+a{
+	color: #000;
+}
+
+.gh-page{
+	font-size: 40px;
+	color: #00f;
+}
+
+.showImg img{
+	height: 200px;
+	opacity: 0;
+	transition: opacity 0.6s;
+}
