@@ -21,12 +21,11 @@ $(function (){
             }
         },
         afterRender:function (){
-            
+            setTimeout(function (){
+                $('#mark').fadeOut(400);
+            }, 600);
         },
     });
-    setInterval(function(){
-        $.fn.fullpage.moveSlideRight();
-    }, 3000);
     var option = {
         title: {
             text: ''
