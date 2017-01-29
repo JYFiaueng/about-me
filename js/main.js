@@ -47,7 +47,12 @@ $(function (){
                     {text: 'Koa', max: 100}
                 ],
                 center: ['20%','60%'],
-                radius: 100
+                radius: 100,
+                name:{
+                    textStyle:{
+                        color:'#666'
+                    }
+                }
             },
             {
                 indicator: [
@@ -60,7 +65,12 @@ $(function (){
                     {text: 'CSS', max: 100}
                 ],
                 center: ['50%','40%'],
-                radius: 100
+                radius: 100,
+                name:{
+                    textStyle:{
+                        color:'#666'
+                    }
+                }
             },
             {
                 indicator: [
@@ -72,13 +82,18 @@ $(function (){
                     {text: '书籍', max: 100}
                 ],
                 center: ['80%','60%'],
-                radius: 100
+                radius: 100,
+                name:{
+                    textStyle:{
+                        color:'#666'
+                    }
+                }
             }
         ],
         series: [
             {
                 type: 'radar',
-                 tooltip: {
+                tooltip: {
                     trigger: 'item'
                 },
                 itemStyle: {normal: {areaStyle: {type: 'macarons'}}},
