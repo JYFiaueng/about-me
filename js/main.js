@@ -1,4 +1,5 @@
 $(function (){
+    // 全屏插件设置
     $('#dowebok').fullpage({
         sectionsColor: ['#3498DB', '#2ECC71', '#eee', '#F39C12', '#FFFEBB'],
         anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
@@ -26,6 +27,24 @@ $(function (){
             }, 600);
         },
     });
+    // 根据可视区大小自动关闭滚动效果
+    $(window).resize(function(){
+        autoScrolling();
+    });
+    function autoScrolling(){
+        var $ww = $(window).width();
+        if($ww < 1024){
+            $.fn.fullpage.setAutoScrolling(false);
+        } else {
+            $.fn.fullpage.setAutoScrolling(true);
+        }
+    }
+    autoScrolling();
+    // 返回顶部
+    $("#backtop").click(function (){
+        $.fn.fullpage.moveTo('1');
+    });
+    // echarts配置
     var option = {
         title: {
             text: ''
