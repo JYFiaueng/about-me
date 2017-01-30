@@ -8,8 +8,8 @@
 		<link rel="shortcut icon" href="favicon.ico">
 		<title>贾雨峰的简介</title>
 
-		<link href="./libs/fullpage/jquery.fullPage.css" rel="stylesheet">
 		<link href="./libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="./libs/fullpage/jquery.fullPage.css" rel="stylesheet">
 		<link rel="stylesheet" href="./css/main.css">
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -39,15 +39,15 @@
 			<nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
 				<div class="container-fluid">
 					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#showHead" aria-expanded="false">
 							<span class="sr-only">Toggle navigation</span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand" href="#">贾雨峰</a>
+						<a class="navbar-brand" href="/">贾雨峰</a>
 					</div>
-					<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+					<div class="collapse navbar-collapse navbar-right" id="showHead">
 						<ul class="nav navbar-nav" id="menu">
 							<li data-menuanchor="page1" class="active"><a href="#page1">个人简介</a></li>
 							<li data-menuanchor="page2"><a href="#page2">项目经验</a></li>
@@ -92,7 +92,9 @@
 							</div>
 						</div>
 						<p class="help-block whiteFont titleFont">档案管理系统</p>
-						<p class="col-xs-8 col-xs-offset-2 help-block whiteFont">具有完善的档案管理、上传、下载、在线编辑查看等功能，后台使用java，担任项目负责人。<br><a href="https://github.com/JYFiaueng/KPArchiveMIS" target="blank">Github详情 &gt;&gt;</a></p>
+						<div class="row">
+							<p class="col-xs-8 col-xs-offset-2 help-block whiteFont">具有完善的档案管理、上传、下载、在线编辑查看等功能，后台使用java，担任项目负责人。<br><a href="https://github.com/JYFiaueng/KPArchiveMIS" target="blank">Github详情 &gt;&gt;</a></p>
+						</div>
 					</div>
 					<div class="col-sm-4 text-center">
 						<div class="row">
@@ -101,7 +103,9 @@
 							</div>
 						</div>
 						<p class="help-block whiteFont titleFont">图书小站</p>
-						<p class="col-xs-8 col-xs-offset-2 help-block whiteFont">个人项目，通过此项目学习使用nodejs、express、mongoDB、bootstrap、jade、bower等技术，从豆瓣获取图书信息。<br><a href="https://github.com/JYFiaueng/readBook" target="blank">Github详情 &gt;&gt;</a></p>
+						<div class="row">
+							<p class="col-xs-8 col-xs-offset-2 help-block whiteFont">个人项目，通过此项目学习使用nodejs、express、mongoDB、bootstrap、jade、bower等技术，从豆瓣获取图书信息。<br><a href="https://github.com/JYFiaueng/readBook" target="blank">Github详情 &gt;&gt;</a></p>
+						</div>
 					</div>
 					<div class="col-sm-4 text-center">
 						<div class="row">
@@ -110,7 +114,9 @@
 							</div>
 						</div>
 						<p class="help-block whiteFont titleFont">潞安集团新闻客户端</p>
-						<p class="col-xs-8 col-xs-offset-2 help-block whiteFont">使用ionci开发的潞安集团接口型客户端，项目人数两人，主要负责用户相关的页面编写。<br><a href="https://github.com/JYFiaueng/luan_news" target="blank">Github详情 &gt;&gt;</a></p>
+						<div class="row">
+							<p class="col-xs-8 col-xs-offset-2 help-block whiteFont">使用ionci开发的潞安集团接口型客户端，项目人数两人，主要负责用户相关的页面编写。<br><a href="https://github.com/JYFiaueng/luan_news" target="blank">Github详情 &gt;&gt;</a></p>
+						</div>
 					</div>
 				</div>
 				<div class="section">
@@ -147,6 +153,7 @@
 		<script src="./libs/lining/lining.min.js"></script>
 		<script src="./libs/lining/lining.effect.min.js"></script>
 		<script src="./libs/jquery/jquery.min.js"></script>
+		<script src="./libs/bootstrap/js/bootstrap.min.js"></script>
 		<script src="./libs/fullpage/jquery.fullPage.min.js"></script>
 		<script src="./libs/echarts.min.js"></script>
 		<script src="./js/main.js"></script>
