@@ -49,7 +49,6 @@ a{
 .rotate:hover{
 	animation: baidong 1s linear;
 }
-
 @keyframes baidong {
 	0%{
 		transform: rotate(35deg);
@@ -85,6 +84,7 @@ a{
     transform: rotate(0deg);
   }
 }
+
 
 .gh-page{
 	color: #00f;
@@ -214,23 +214,7 @@ svg {
   border-radius: 3px;
 }
 #backtop:hover {
-  -webkit-animation: back 0.5s infinite;
-  -moz-animation: back 0.5s infinite;
-  -ms-animation: back 0.5s infinite;
-  -o-animation: back 0.5s infinite;
-  animation: back 0.5s infinite;
-}
-@keyframes back {
-  0% {
-    bottom: 20px;
-  }
-  50% {
-    bottom: 30px;
-    /*box-shadow: 0 0 10px #aaa;*/
-  }
-  100% {
-    bottom: 20px;
-  }
+  animation: back 0.4s;
 }
 #backtop:after {
   content: "";
@@ -239,5 +223,75 @@ svg {
   position: absolute;
   left: 4px;
   top: 30px;
-  box-shadow: 2px -2px, 4px -4px, 6px -6px, 8px -8px, 10px -10px, 12px -12px, 14px -14px, 16px -16px, 18px -18px, 20px -20px, 22px -18px, 24px -16px, 26px -14px, 28px -12px, 30px -10px, 32px -8px, 34px -6px, 36px -4px, 38px -2px, 12px -10px, 14px -9px, 16px -8px, 18px -7px, 20px -6px, 22px -7px, 24px -8px, 26px -9px, 28px -10px;
+  box-shadow: 2px -2px, 
+  						4px -4px, 
+  						6px -6px, 
+  						8px -8px, 
+  						10px -10px, 
+  						12px -12px, 
+  						14px -14px, 
+  						16px -16px, 
+  						18px -18px, 
+  						20px -20px, 
+  						22px -18px, 
+  						24px -16px, 
+  						26px -14px, 
+  						28px -12px, 
+  						30px -10px, 
+  						32px -8px, 
+  						34px -6px, 
+  						36px -4px, 
+  						38px -2px, 
+  						12px -10px, 
+  						14px -9px, 
+  						16px -8px, 
+  						18px -7px, 
+  						20px -6px, 
+  						22px -7px, 
+  						24px -8px, 
+  						26px -9px, 
+  						28px -10px;
+  transition: box-shadow 0.4s;
+}
+#backtop:hover::after{
+	box-shadow: 11px 7px, 
+  						12px 4px, 
+  						13px 1px, 
+  						14px -2px, 
+  						15px -5px, 
+  						16px -8px, 
+  						17px -11px, 
+  						18px -14px, 
+  						19px -17px, 
+  						20px -20px, 
+  						21px -17px, 
+  						22px -14px, 
+  						23px -11px, 
+  						24px -8px, 
+  						25px -5px, 
+  						26px -2px, 
+  						27px 1px, 
+  						28px 4px, 
+  						29px 7px, 
+  						16px -5px, 
+  						17px -2px, 
+  						18px 1px, 
+  						19px 4px, 
+  						20px 7px, 
+  						21px 4px, 
+  						22px 1px, 
+  						23px -2px, 
+  						24px -5px;
+}
+
+@keyframes back {
+  0% {
+    bottom: 20px;
+  }
+  50% {
+    bottom: 30px;
+  }
+  100% {
+    bottom: 20px;
+  }
 }
