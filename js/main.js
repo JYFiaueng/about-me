@@ -1,4 +1,5 @@
 $(function (){
+    console.log('你是不是也喜欢按F12？');
     // echarts配置
     var option = {
         title: {
@@ -148,7 +149,6 @@ $(function (){
         throttle(autoScrolling, window);
     });
     function autoScrolling(){
-        console.log('asd');
         var $ww = $(window).width();
         if($ww < 768){
             $.fn.fullpage.setAutoScrolling(false);
