@@ -297,6 +297,7 @@ svg {
   -o-user-select: none;
   user-select: none;
   margin: 20px;
+  display: block;
   font-weight: bold;
   font-size: 0px;
   text-align: center;
@@ -308,6 +309,7 @@ svg {
   animation: spanT 3.4s linear;
   animation-iteration-count: infinite;
   transform-origin: 50% -20px;
+  text-shadow: 2px 2px #000;
 }
 .gh-page span:nth-child(1){
   animation-delay: 0s;
