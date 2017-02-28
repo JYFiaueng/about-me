@@ -74,7 +74,7 @@ $(function (){
                 itemStyle: {normal: {areaStyle: {type: 'macarons'}}},
                 data: [
                     {
-                        value: [70,70,60,90,90],
+                        value: [60,70,60,60,40],
                         name: '框架/库'
                     }
                 ]
