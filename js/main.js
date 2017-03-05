@@ -134,7 +134,7 @@ $(function (){
         afterRender:function (){
             setTimeout(function (){
                 $('#mark').fadeOut(400);
-            }, 600);
+            }, 2600);
         },
     });
     // 根据可视区大小自动关闭滚动效果
