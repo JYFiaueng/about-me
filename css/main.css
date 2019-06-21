@@ -1,0 +1,475 @@
+body{
+	font-family: Consoles 'simsun', sans-serif;
+}
+
+nav{
+	font-size: 18px;
+}
+
+a{
+	color: #000;
+}
+
+.headPicture{
+	height: 180px;
+	opacity: 0;
+	transition: opacity 0.6s;
+}
+.headPicture-active{
+	opacity: 1;
+}
+
+.info{
+	font-weight: bold;
+	font-size: 22px;
+	color: #fff;
+}
+
+.titleFont{
+	font-weight: bold;
+	font-style: oblique;
+}
+
+.whiteFont{
+	color: #fff;
+	font-size: 22px;
+	opacity: 0;
+	transition: opacity 0.6s;
+}
+.whiteFont-active{
+	opacity: 1;
+}
+.whiteFont1{
+	color: #fff;
+	font-size: 22px;
+	opacity: 1;
+	transition: opacity 0.6s;
+}
+
+.rotate:hover{
+	animation: baidong 1s linear;
+}
+@keyframes baidong {
+	0%{
+		transform: rotate(35deg);
+	}
+	10%{
+		transform: rotate(-35deg);
+	}
+	20%{
+		transform: rotate(30deg);
+	}
+	30%{
+		transform: rotate(-30deg);
+	}
+	40%{
+		transform: rotate(20deg);
+	}
+	50%{
+		transform: rotate(-20deg);
+	}
+	60%{
+		transform: rotate(10deg);
+	}
+	70%{
+		transform: rotate(-10deg);
+	}
+	80%{
+		transform: rotate(5deg);
+	}
+	90%{
+		transform: rotate(-5deg);
+	}
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
+/*.gh-page{
+	color: #00f;
+}
+.gh-page span{
+	display: inline-block;
+	font-size: 60px;
+}
+.gh-page:hover span{
+	animation: spanT 0.4s linear;
+}
+.gh-page span:nth-child(1){
+	animation-delay: 0s;
+}
+.gh-page span:nth-child(2){
+	animation-delay: 0.1s;
+}
+.gh-page span:nth-child(3){
+	animation-delay: 0.2s;
+}
+.gh-page span:nth-child(4){
+	animation-delay: 0.3s;
+}
+.gh-page span:nth-child(5){
+	animation-delay: 0.4s;
+}
+.gh-page span:nth-child(6){
+	animation-delay: 0.5s;
+}
+.gh-page span:nth-child(7){
+	animation-delay: 0.6s;
+}
+.gh-page span:nth-child(8){
+	animation-delay: 0.7s;
+}
+.gh-page span:nth-child(9){
+	animation-delay: 0.8s;
+}
+.gh-page span:nth-child(10){
+	animation-delay: 0.9s;
+}
+.gh-page span:nth-child(11){
+	animation-delay: 1s;
+}
+@keyframes spanT{
+	0%{
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(4);
+	}
+	100%{
+		transform: scale(1);
+	}
+}*/
+
+.showImg img{
+	height: 200px;
+	opacity: 0;
+	transition: opacity 0.6s;
+}
+
+#mark{
+	position: fixed;
+	font-size: 16em;
+	background-color: #ddd;
+	right: 0;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	z-index: 1031;
+}
+#mark:before, #mark:after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 50%;
+  box-shadow: 0 0 5px #fff;
+  background-color: #27D7F0;
+}
+#mark:after{
+  width: 5px;
+  height: 5px;
+  margin-left: 50%;
+  animation: ma 1.6s linear;
+  animation-iteration-count: infinite;
+  transform-origin: left 50%;
+}
+#mark:before{
+  width: 50px;
+  height: 50px;
+  margin-right: 50%;
+  animation: mb 1.6s linear;
+  animation-iteration-count: infinite;
+  transform-origin: right 50%;
+}
+@keyframes ma{
+  0%{
+    transform: rotateZ(0deg);
+    width: 1px;
+    height: 1px;
+  }
+  60%{
+    width: 50px;
+    height: 50px;
+  }
+  100%{
+    transform: rotateZ(360deg);
+    width: 1px;
+    height: 1px;
+  }
+}
+@keyframes mb{
+  0%{
+    transform: rotateZ(0deg);
+    width: 50px;
+    height: 50px;
+  }
+  40%{
+    width: 1px;
+    height: 1px;
+  }
+  100%{
+    transform: rotateZ(360deg);
+    width: 50px;
+    height: 50px;
+  }
+}
+.text {
+  fill: none;
+  stroke-width: 3;
+  stroke-linejoin: round;
+  stroke-dasharray: 70 330;
+  stroke-dashoffset: 0;
+  animation: stroke 6s infinite linear;
+}
+.text:nth-child(5n + 1) {
+  stroke: #3498DB;
+  animation-delay: -1.2s;
+}
+.text:nth-child(5n + 2) {
+  stroke: #2ECC71;
+  animation-delay: -2.4s;
+}
+.text:nth-child(5n + 3) {
+  stroke: #eee;
+  animation-delay: -3.6s;
+}
+.text:nth-child(5n + 4) {
+  stroke: #F39C12;
+  animation-delay: -4.8s;
+}
+.text:nth-child(5n + 5) {
+  stroke: #FFFEBB;
+  animation-delay: -6s;
+}
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+
+#backtop {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  background-color: rgba(255,255,255,0);
+  bottom: 20px;
+  right: 0px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+#backtop:hover {
+  animation: back 0.4s;
+}
+#backtop:after {
+  content: "";
+  width: 2px;
+  height: 5px;
+  position: absolute;
+  left: 4px;
+  top: 30px;
+  box-shadow: 2px -2px, 
+  						4px -4px, 
+  						6px -6px, 
+  						8px -8px, 
+  						10px -10px, 
+  						12px -12px, 
+  						14px -14px, 
+  						16px -16px, 
+  						18px -18px, 
+  						20px -20px, 
+  						22px -18px, 
+  						24px -16px, 
+  						26px -14px, 
+  						28px -12px, 
+  						30px -10px, 
+  						32px -8px, 
+  						34px -6px, 
+  						36px -4px, 
+  						38px -2px, 
+  						12px -10px, 
+  						14px -9px, 
+  						16px -8px, 
+  						18px -7px, 
+  						20px -6px, 
+  						22px -7px, 
+  						24px -8px, 
+  						26px -9px, 
+  						28px -10px;
+  transition: box-shadow 0.4s;
+}
+#backtop:hover::after{
+	box-shadow: 11px 7px, 
+  						12px 4px, 
+  						13px 1px, 
+  						14px -2px, 
+  						15px -5px, 
+  						16px -8px, 
+  						17px -11px, 
+  						18px -14px, 
+  						19px -17px, 
+  						20px -20px, 
+  						21px -17px, 
+  						22px -14px, 
+  						23px -11px, 
+  						24px -8px, 
+  						25px -5px, 
+  						26px -2px, 
+  						27px 1px, 
+  						28px 4px, 
+  						29px 7px, 
+  						16px -5px, 
+  						17px -2px, 
+  						18px 1px, 
+  						19px 4px, 
+  						20px 7px, 
+  						21px 4px, 
+  						22px 1px, 
+  						23px -2px, 
+  						24px -5px;
+}
+@keyframes back {
+  0% {
+    bottom: 20px;
+  }
+  50% {
+    bottom: 30px;
+  }
+  100% {
+    bottom: 20px;
+  }
+}
+
+
+.gh-page{
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  margin: 20px;
+  display: block;
+  font-weight: bold;
+  font-size: 60px;
+  text-align: center;
+  color: #34495E;
+}
+.gh-page span{
+  font-size: 50px;
+  display: inline-block;
+  animation: spanT 3.4s linear;
+  animation-iteration-count: infinite;
+  transform-origin: 50% -20px;
+  text-shadow: 2px 2px #000;
+}
+.gh-page span:nth-child(1){
+  animation-delay: 0s;
+  animation: spanTT 3.4s linear;
+  animation-iteration-count: infinite;
+  background-image: url('./羊头锤子.png');
+  background-repeat: no-repeat;
+  padding: 32px;
+}
+.gh-page span:nth-child(2){
+  animation-delay: 0.1s;
+}
+.gh-page span:nth-child(3){
+  animation-delay: 0.2s;
+}
+.gh-page span:nth-child(4){
+  animation-delay: 0.3s;
+}
+.gh-page span:nth-child(5){
+  animation-delay: 0.4s;
+}
+.gh-page span:nth-child(6){
+  animation-delay: 0.5s;
+}
+.gh-page span:nth-child(7){
+  animation-delay: 0.6s;
+}
+.gh-page span:nth-child(8){
+  animation-delay: 0.7s;
+}
+.gh-page span:nth-child(9){
+  animation-delay: 0.8s;
+}
+.gh-page span:nth-child(10){
+  animation-delay: 0.9s;
+}
+.gh-page span:nth-child(11){
+  animation-delay: 1.0s;
+}
+.gh-page span:nth-child(12){
+  animation-delay: 1.1s;
+}
+@keyframes spanTT{
+  0%{
+    transform: perspective(100px) rotateZ(0deg);
+  }
+  52%{
+    transform: perspective(100px) rotateZ(50deg);
+  }
+  53%{
+    transform: perspective(100px) rotateZ(45deg);
+  }
+  54%{
+    transform: perspective(100px) rotateZ(30deg);
+  }
+  55%{
+    transform: perspective(100px) rotateZ(-20deg);
+  }
+}
+@keyframes spanT{
+  0%{
+    transform: perspective(100px) rotateZ(0deg);
+  }
+  54%{
+    transform: perspective(100px) rotateZ(0deg);
+  }
+  55%{
+    transform: perspective(100px) rotateZ(-50deg);
+  }
+  60%{
+    transform: perspective(100px) rotateZ(45deg);
+  }
+  65%{
+    transform: perspective(100px) rotateZ(-40deg);
+  }
+  70%{
+    transform: perspective(100px) rotateZ(35deg);
+  }
+  75%{
+    transform: perspective(100px) rotateZ(-30deg);
+  }
+  80%{
+    transform: perspective(100px) rotateZ(25deg);
+  }
+  85%{
+    transform: perspective(100px) rotateZ(-20deg);
+  }
+  90%{
+    transform: perspective(100px) rotateZ(15deg);
+  }
+  95%{
+    transform: perspective(100px) rotateZ(-10deg);
+  }
+  97%{
+    transform: perspective(100px) rotateZ(5deg);
+  }
+  99%{
+    transform: perspective(100px) rotateZ(-2deg);
+  }
+  100%{
+    transform: perspective(100px) rotateZ(0deg);
+  }
+}
